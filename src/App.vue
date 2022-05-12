@@ -2,44 +2,37 @@
   <div id="app">
     <!--<img alt="Vue logo" src="./assets/logo.png" />  -->
 
-    <MostrarTabla
-      :titulo="datos1.titulo"
-      :datos="datos1.datos"
-      :columnas="datos1.columnas"
-      :fondo="datos1.fondo"
-      :color-titulo="datos1.colorTexto"
-    >
-    </MostrarTabla>
-      <MostrarTabla
+
+      <MostrarTablaDatos
       :titulo="datos2.titulo"
       :datos="datos2.datos"
       :columnas="datos2.columnas"
       :fondo="datos2.fondo"
       :color-titulo="datos2.colorTexto"
     >
-    </MostrarTabla>
+    </MostrarTablaDatos>
 
-      <MostrarTabla
+      <MostrarTablaDatos
       :titulo="datos3.titulo"
       :datos="datos3.datos"
       :columnas="datos3.columnas"
       :fondo="datos3.fondo"
       :color-titulo="datos3.colorTexto"
     >
-    </MostrarTabla>
+    </MostrarTablaDatos>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
 
-import MostrarDatos from "./components/MostrarTablaDatos.vue";
+import MostrarTablaDatos from "./components/MostrarTablaDatos.vue";
 
 export default {
   name: "App",
 
   components: {
-    MostrarDatos
+    MostrarTablaDatos
   },
   data() {
     return {
